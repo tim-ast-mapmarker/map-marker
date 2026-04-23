@@ -29,6 +29,15 @@ Project peta interaktif menggunakan React.js dan Leaflet.
 - Menambahkan styling dasar pada App.css
 - Project berhasil dijalankan tanpa error
 
+
+**Progress by: Thahira Riska**
+
+- Melakukan review dan approval PR Shania
+- Merge perubahan ke branch main
+- Sinkronisasi repository lokal dengan main
+- Membersihkan file default yang tidak digunakan
+- Memastikan struktur project lebih rapi
+
 ---
 
 ## Tech Stack
