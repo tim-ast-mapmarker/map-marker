@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -182,3 +191,4 @@
     border-right-color: var(--border);
   }
 }
+
