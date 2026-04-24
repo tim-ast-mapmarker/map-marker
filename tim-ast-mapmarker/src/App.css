@@ -192,3 +192,37 @@ h1 {
   }
 }
 
+/* ============================= */
+/* Popup Styling - Day 2 Shania */
+/* ============================= */
+
+.leaflet-popup-content {
+  margin: 0;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-popup-tip {
+  background-color: #f8f9fa;
+}
+
+.popup-card {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.popup-card h3,
+.popup-card h4 {
+  margin: 0 0 6px 0;
+  color: #1e3a8a;
+}
+
+.popup-card p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #444;
+}
