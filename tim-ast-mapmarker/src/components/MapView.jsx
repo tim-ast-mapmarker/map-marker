@@ -39,7 +39,7 @@ export default function MapView() {
           attribution="© OpenStreetMap contributors"
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {/* Contoh marker dengan popup di lokasi Universitas Syiah Kuala */}
+        {/* AREA USK */}
         <Circle
           center={[5.5693, 95.3699]}
           radius={500}
@@ -49,35 +49,36 @@ export default function MapView() {
             fillOpacity: 0.4,
           }}
         >
-
-
-
-{locations.map((loc, index) => (
-  <Marker key={index} position={loc.position}>
-    <Popup>
-      <div style={{ textAlign: "center" }}>
-        <h4>{loc.name}</h4>
-        <p>{loc.address}</p>
-      </div>
-    </Popup>
-  </Marker>
-))}
-
           <Popup>
-            <div style={{ textAlign: "center" }}>
+            <div className="popup-card">
               <h3>Universitas Syiah Kuala</h3>
               <p>Kawasan Kampus USK</p>
-              <p>Jl. Teuku Nyak Arief No.441, Kopelma Darussalam, Kec. Syiah Kuala, Kota Banda Aceh, Aceh 23111</p>
+              <p>
+                Jl. Teuku Nyak Arief No.441, Kopelma Darussalam,
+                Kec. Syiah Kuala, Kota Banda Aceh, Aceh 23111
+              </p>
             </div>
           </Popup>
         </Circle>
+
+        {/* MULTIPLE MARKERS */}
+        {locations.map((loc, index) => (
+          <Marker key={index} position={loc.position}>
+            <Popup>
+              <div className="popup-card">
+                <h4>{loc.name}</h4>
+                <p>{loc.address}</p>
+              </div>
+            </Popup>
+          </Marker>
+        ))}
 
       </MapContainer>
       {/* LEGEND */}
       <div className="map-legend">
         <h4>Keterangan</h4>
-        <p>🟦 Area = Kawasan</p>
-        <p>📍 Marker = Lokasi Spesifik</p>
+        <p> Area = Kawasan</p>
+        <p> Marker = Lokasi Spesifik</p>
       </div>
     </div>
   );
