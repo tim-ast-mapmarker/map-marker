@@ -69,7 +69,7 @@ export default function MapView() {
   edukasi: "green",
   pemerintahan: "blue",
   kesehatan: "red",
-  layanan: "grey",
+  layanan: "violet",
 };
 
   const getCustomIcon = (category) =>
