@@ -2,66 +2,13 @@ import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { Marker, Popup, Circle } from "react-leaflet";
 import L from "leaflet";
+import locations from "../data/locations.json";
 
-export default function MapView() {
+export default function MapView() { 
+  
+ 
 
-
-  const locations = [
-    {
-      name: "Masjid Raya Baiturrahman",
-      position: [5.5538, 95.3172],
-      address: "Jl. Moh. Jam No.1, Kp. Baru, Kec. Baiturrahman, Kota Banda Aceh, Aceh 23127",
-      category: "wisata",
-    },
-    {
-      name: "Museum Tsunami Aceh",
-      position: [5.5477129, 95.3151901],
-      address: "Jl. Sultan Iskandar Muda No.3, Sukaramai, Kec. Baiturrahman, Kota Banda Aceh, Aceh 23116",
-      category: "wisata",
-    },
-    {
-      name: "Pantai Ulee Lheue",
-      position: [5.5643903, 95.2923091],
-      address: "Ulee Lheue, Kec. Meuraxa, Kota Banda Aceh, Aceh",
-      category: "wisata",
-    },
-    {
-      name: "Taman Sari Banda Aceh",
-      position: [5.5458870, 95.3161750],
-      address: "Jl. Merapi No.37, Sukaramai, Kec.Baiturrahman, Kota Banda Aceh, Aceh 23116",
-      category: "wisata",
-    },
-    {
-      name: "Gramedia Banda Aceh",
-      position: [5.5574620, 95.3444816],
-      address: "Jl. T. Panglima Nyak Makam, Ie Masen Kaye Adang, Kec. Syiah Kuala, Kota Banda Aceh, Aceh 23116",
-      category: "belanja",
-    },
-    {
-      name: "Perpustakaan Wilayah Aceh",
-      position: [5.5751, 95.3560],
-      address: "Jl. Teuku Nyak Arief No.23, Lamgugob, Kec. Syiah Kuala, Kota Banda Aceh, Aceh 24415",
-      category: "edukasi",
-    },
-    {
-      name: "Kantor Gubernur Aceh",
-      position: [5.5705, 95.3407],
-      address: "Jl. Teuku Nyak Arief, Jeulingke, Kec. Syiah Kuala, Kota Banda Aceh",
-      category: "pemerintahan",
-    },
-    {
-      name: "RSUD Zainoel Abidin",
-      position: [5.5641, 95.3372],
-      address: "Jl. Moh. Daud Beureuh No.108, Bandar Baru, Kec. Kuta Alam, Kota Banda Aceh, Aceh 24415",
-      category: "kesehatan",
-    },
-    {
-      name: "Kantor Pos Banda Aceh",
-      position: [5.5570, 95.3214],
-      address: "Jl. T. Hamzah Bendahara No. 33, Kuta Alam, Banda Aceh, Aceh 23121",
-      category: "layanan",
-    },
-  ];
+ 
   
   const iconColors = {
   wisata: "yellow",
