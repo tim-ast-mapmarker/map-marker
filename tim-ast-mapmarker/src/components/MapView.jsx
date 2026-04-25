@@ -1,6 +1,7 @@
 import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { Marker, Popup, Circle } from "react-leaflet";
+import L from "leaflet";
 
 export default function MapView() {
 
@@ -8,7 +9,7 @@ export default function MapView() {
   const locations = [
     {
       name: "Masjid Raya Baiturrahman",
-      position: [5.5539, 95.3173],
+      position: [5.5538, 95.3172],
       address: "Jl. Moh. Jam No.1, Kp. Baru, Kec. Baiturrahman, Kota Banda Aceh, Aceh 23127",
     },
     {
@@ -26,7 +27,36 @@ export default function MapView() {
       position: [5.5458870, 95.3161750],
       address: "Jl. Merapi No.37, Sukaramai, Kec.Baiturrahman, Kota Banda Aceh, Aceh 23116",
     },
+    {
+      name: "Gramedia Banda Aceh",
+      position: [5.5574620, 95.3444816],
+      address: "Jl. T. Panglima Nyak Makam, Ie Masen Kaye Adang, Kec. Syiah Kuala, Kota Banda Aceh, Aceh 23116",
+    },
+    {
+      name: "Perpustakaan Wilayah Aceh",
+      position: [5.5751, 95.3560],
+      address: "Jl. Teuku Nyak Arief No.23, Lamgugob, Kec. Syiah Kuala, Kota Banda Aceh, Aceh 24415",
+    },
+    {
+      name: "Kantor Gubernur Aceh",
+      position: [5.5705, 95.3407],
+      address: "Jl. Teuku Nyak Arief, Jeulingke, Kec. Syiah Kuala, Kota Banda Aceh",
+    },
+    {
+      name: "RSUD Zainoel Abidin",
+      position: [5.5641, 95.3372],
+      address: "Jl. Moh. Daud Beureuh No.108, Bandar Baru, Kec. Kuta Alam, Kota Banda Aceh, Aceh 24415",
+    },
+    {
+      name: "Kantor Pos Banda Aceh",
+      position: [5.5570, 95.3214],
+      address: "Jl. T. Hamzah Bendahara No. 33, Kuta Alam, Banda Aceh, Aceh 23121",
+    },
   ];
+  const customIcon = new L.Icon({
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+    iconSize: [30, 30],
+  });
 
   return (
     <div style={{ height: "100vh" }}>
@@ -63,7 +93,7 @@ export default function MapView() {
 
         {/* MULTIPLE MARKERS */}
         {locations.map((loc, index) => (
-          <Marker key={index} position={loc.position}>
+          <Marker key={index} position={loc.position} icon={customIcon}>
             <Popup>
               <div className="popup-card">
                 <h4>{loc.name}</h4>
