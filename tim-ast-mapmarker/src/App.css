@@ -226,3 +226,41 @@ h1 {
   font-size: 13px;
   color: #444;
 }
+
+.map-legend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  padding: 12px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-size: 14px;
+  z-index: 1000;
+}
+
+.map-legend h4 {
+  margin: 0 0 8px 0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.legend-item img {
+  width: 18px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+.legend-circle {
+  width: 15px;
+  height: 15px;
+  background-color: lightblue;
+  border: 2px solid blue;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
