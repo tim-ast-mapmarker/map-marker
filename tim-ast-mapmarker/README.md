@@ -116,7 +116,43 @@ Project peta interaktif menggunakan React.js dan Leaflet.
 - PR berhasil direview dan merge ke branch `main`
 
 ---
+
+## Day 4 – 26 April 2026  
+**Tema: Interaktif Map Feature**
+
+**Progress by: Arifa Muthmainnah**
+
+- Menambahkan fitur klik pada peta untuk menambahkan marker baru
+- Marker yang ditambahkan tersimpan dalam state (dynamic marker)
+- Menambahkan 5 marker tambahan dengan kategori acak:
+  - MAN 1 Banda Aceh (Edukasi)
+  - Suzuya Mall Banda Aceh (Belanja)
+  - RSU Cempaka Lima (Kesehatan)
+  - Kantor DPRK Banda Aceh (Pemerintahan)
+  - Museum Aceh (Wisata)
+- Menambahkan simbol lingkaran area pada legend untuk USK agar konsisten dengan tampilan peta
+
 ---
+
+**Progress by: Shania Rizka Anindia**
+
+- Membuat UI Button Panel untuk kontrol interaktif
+- Menambahkan tombol Clear Marker
+- Menyempurnakan tata letak panel agar tidak menutupi peta
+- Styling konsisten dengan legend dan popup
+
+---
+
+**Progress by: Thahira Riska**
+
+- Menambahkan fitur delete marker per item
+- Menambahkan tombol "Hapus Marker" pada popup marker hasil klik
+- Menggunakan metode filtering state untuk menghapus marker tertentu
+- Menambahkan styling tombol delete agar user-friendly
+- Melakukan review dan approval PR fitur interaktif
+
+---
+
 
 ## Tech Stack
 - React.js
