@@ -52,5 +52,35 @@
         "position": [5.5570, 95.3214],
         "address": "Jl. T. Hamzah Bendahara No. 33, Kuta Alam, Banda Aceh, Aceh 23121",
         "category": "layanan"
+      },
+      {
+        "name": "Terminal Bus Batoh",
+        "position": [5.5297, 95.3289],
+        "address": "Jl. Dr. Mr. Mohd. Hasan, Batoh, Kec. Lueng Bata, Banda Aceh",
+        "category": "layanan"
+      },
+      {
+        "name": "Pasar Aceh",
+        "position": [5.5549, 95.3167],
+        "address": "Jl. Pangeran Diponegoro, Kp. Baru, Kec. Baiturrahman, Banda Aceh",
+        "category": "belanja"
+      },
+      {
+        "name": "Suzuya Mall Banda Aceh",
+        "position": [5.5378, 95.3067],
+        "address": "Jl. Teuku Umar, Lamtemen Tim., Kec. Jaya Baru, Banda Aceh",
+        "category": "belanja"
+      },
+      {
+        "name": "Dinas Pendidikan Aceh Gedung A",
+        "position": [5.5565, 95.32465],
+        "address": "Jl. Moh. Daud Beureuh, Bandar Baru, Kec. Kuta Alam, Banda Aceh",
+        "category": "pemerintahan"
+      },
+      {
+        "name": "RSU Cempaka Lima (RSUCL)",
+        "position": [5.5526, 95.33481],
+        "address": "Jl. Politeknik Aceh No.23, Beurawe, Kec. Kuta Alam, Banda Aceh",
+        "category": "kesehatan"
       }
   ]

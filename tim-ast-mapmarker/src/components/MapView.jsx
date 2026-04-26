@@ -3,21 +3,21 @@ import "leaflet/dist/leaflet.css";
 import { Marker, Popup, Circle } from "react-leaflet";
 import L from "leaflet";
 import locations from "../data/locations.json";
+import { useState } from "react";
+import { useMapEvents } from "react-leaflet";
 
 export default function MapView() { 
-  
- 
+  const [dynamicMarkers, setDynamicMarkers] = useState([]);
 
- 
   
   const iconColors = {
-  wisata: "yellow",
-  belanja: "orange",
-  edukasi: "green",
-  pemerintahan: "blue",
-  kesehatan: "red",
-  layanan: "violet",
-};
+    wisata: "yellow",
+    belanja: "orange",
+    edukasi: "green",
+    pemerintahan: "blue",
+    kesehatan: "red",
+    layanan: "violet",
+  };
 
   const getCustomIcon = (category) =>
   new L.Icon({
@@ -30,6 +30,21 @@ export default function MapView() {
     shadowSize: [41, 41],
   });
 
+  function AddMarkerOnClick() {
+      useMapEvents({
+        click(e) {
+          const newMarker = {
+            position: [e.latlng.lat, e.latlng.lng],
+            name: "Marker Baru",
+            address: "Ditambahkan melalui klik peta",
+            category: "layanan",
+          };
+          setDynamicMarkers((prev) => [...prev, newMarker]);
+        },
+      });
+      return null;
+  }
+
   return (
     <div style={{ height: "100vh" }}>
       <MapContainer
@@ -41,6 +56,8 @@ export default function MapView() {
           attribution="© OpenStreetMap contributors"
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
+        <AddMarkerOnClick />
+        
         {/* AREA USK */}
         <Circle
           center={[5.5693, 95.3699]}
@@ -66,6 +83,22 @@ export default function MapView() {
         {/* MULTIPLE MARKERS */}
         {locations.map((loc, index) => (
           <Marker key={index} position={loc.position} icon={getCustomIcon(loc.category)}>
+            <Popup>
+              <div className="popup-card">
+                <h3>{loc.name}</h3>
+                <p>{loc.address}</p>
+                <p><strong>Kategori:</strong> {loc.category}</p>
+              </div>
+            </Popup>
+          </Marker>
+        ))}
+
+        {dynamicMarkers.map((loc, index) => (
+          <Marker
+            key={`dynamic-${index}`}
+            position={loc.position}
+            icon={getCustomIcon(loc.category)}
+          >
             <Popup>
               <div className="popup-card">
                 <h3>{loc.name}</h3>
@@ -112,8 +145,8 @@ export default function MapView() {
         </div>
 
         <div className="legend-item">
-          <span className="legend-circle"></span>
-          <span>Area Kampus (USK)</span>
+          <span className="legend-circle usk-circle"></span>
+          <span>Area Kampus USK (Radius 500m)</span>
         </div>
       </div>
     </div>
