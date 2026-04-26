@@ -294,3 +294,18 @@ h1 {
 .map-controls button:hover {
   background-color: #3730a3;
 }
+
+.delete-btn {
+  margin-top: 6px;
+  padding: 5px 8px;
+  border: none;
+  background-color: #dc2626;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #991b1b;
+}

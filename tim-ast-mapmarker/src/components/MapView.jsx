@@ -6,10 +6,16 @@ import locations from "../data/locations.json";
 import { useState } from "react";
 import { useMapEvents } from "react-leaflet";
 
-export default function MapView() { 
+export default function MapView() {
   const [dynamicMarkers, setDynamicMarkers] = useState([]);
 
-  
+  // 🟢 Fungsi hapus marker per index
+  const handleDeleteMarker = (indexToDelete) => {
+    setDynamicMarkers((prev) =>
+      prev.filter((_, index) => index !== indexToDelete)
+    );
+  };
+
   const iconColors = {
     wisata: "yellow",
     belanja: "orange",
@@ -20,29 +26,28 @@ export default function MapView() {
   };
 
   const getCustomIcon = (category) =>
-  new L.Icon({
-    iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${iconColors[category]}.png`,
-    shadowUrl:
-      `https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png`,
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowSize: [41, 41],
-  });
+    new L.Icon({
+      iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${iconColors[category]}.png`,
+      shadowUrl: `https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png`,
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41],
+    });
 
   function AddMarkerOnClick() {
-      useMapEvents({
-        click(e) {
-          const newMarker = {
-            position: [e.latlng.lat, e.latlng.lng],
-            name: "Marker Baru",
-            address: "Ditambahkan melalui klik peta",
-            category: "layanan",
-          };
-          setDynamicMarkers((prev) => [...prev, newMarker]);
-        },
-      });
-      return null;
+    useMapEvents({
+      click(e) {
+        const newMarker = {
+          position: [e.latlng.lat, e.latlng.lng],
+          name: "Marker Baru",
+          address: "Ditambahkan melalui klik peta",
+          category: "layanan",
+        };
+        setDynamicMarkers((prev) => [...prev, newMarker]);
+      },
+    });
+    return null;
   }
 
   return (
@@ -56,8 +61,9 @@ export default function MapView() {
           attribution="© OpenStreetMap contributors"
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
+
         <AddMarkerOnClick />
-        
+
         {/* AREA USK */}
         <Circle
           center={[5.5693, 95.3699]}
@@ -80,19 +86,26 @@ export default function MapView() {
           </Popup>
         </Circle>
 
-        {/* MULTIPLE MARKERS */}
+        {/* MULTIPLE MARKERS (DATA JSON) */}
         {locations.map((loc, index) => (
-          <Marker key={index} position={loc.position} icon={getCustomIcon(loc.category)}>
+          <Marker
+            key={index}
+            position={loc.position}
+            icon={getCustomIcon(loc.category)}
+          >
             <Popup>
               <div className="popup-card">
                 <h3>{loc.name}</h3>
                 <p>{loc.address}</p>
-                <p><strong>Kategori:</strong> {loc.category}</p>
+                <p>
+                  <strong>Kategori:</strong> {loc.category}
+                </p>
               </div>
             </Popup>
           </Marker>
         ))}
 
+        {/* 🟢 DYNAMIC MARKERS + DELETE BUTTON */}
         {dynamicMarkers.map((loc, index) => (
           <Marker
             key={`dynamic-${index}`}
@@ -101,20 +114,29 @@ export default function MapView() {
           >
             <Popup>
               <div className="popup-card">
-                <h3>{loc.name}</h3>
-                <p>{loc.address}</p>
-                <p><strong>Kategori:</strong> {loc.category}</p>
+                <h4>Marker Baru</h4>
+                <p>Lat: {loc.position[0]}</p>
+                <p>Lng: {loc.position[1]}</p>
+
+                <button
+                  className="delete-btn"
+                  onClick={() => handleDeleteMarker(index)}
+                >
+                  Hapus Marker
+                </button>
               </div>
             </Popup>
           </Marker>
         ))}
-
       </MapContainer>
+
+      {/* HAPUS SEMUA MARKER */}
       <div className="map-controls">
         <button onClick={() => setDynamicMarkers([])}>
-          Hapus Marker Klik
+          Hapus Semua Marker
         </button>
       </div>
+
       {/* LEGEND */}
       <div className="map-legend">
         <h4>Keterangan</h4>
