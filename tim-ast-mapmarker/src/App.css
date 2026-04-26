@@ -264,3 +264,33 @@ h1 {
   display: inline-block;
   margin-right: 8px;
 }
+
+/* ============================= */
+/* UI Control Panel - Day 4 */
+/* ============================= */
+
+.map-controls {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.map-controls button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.map-controls button:hover {
+  background-color: #3730a3;
+}

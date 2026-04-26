@@ -110,6 +110,11 @@ export default function MapView() {
         ))}
 
       </MapContainer>
+      <div className="map-controls">
+        <button onClick={() => setDynamicMarkers([])}>
+          Hapus Marker Klik
+        </button>
+      </div>
       {/* LEGEND */}
       <div className="map-legend">
         <h4>Keterangan</h4>
