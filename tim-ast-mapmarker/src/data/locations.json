@@ -6,7 +6,7 @@
         "category": "wisata"
       },
       {
-       " name": "Museum Tsunami Aceh",
+        "name": "Museum Tsunami Aceh",
         "position": [5.5477129, 95.3151901],
         "address": "Jl. Sultan Iskandar Muda No.3, Sukaramai, Kec. Baiturrahman, Kota Banda Aceh, Aceh 23116",
         "category": "wisata"
@@ -57,7 +57,7 @@
         "name": "Terminal Bus Batoh",
         "position": [5.5297, 95.3289],
         "address": "Jl. Dr. Mr. Mohd. Hasan, Batoh, Kec. Lueng Bata, Banda Aceh",
-        "category": "layanan"
+        "category": "transportasi"
       },
       {
         "name": "Pasar Aceh",
@@ -82,5 +82,36 @@
         "position": [5.5526, 95.33481],
         "address": "Jl. Politeknik Aceh No.23, Beurawe, Kec. Kuta Alam, Banda Aceh",
         "category": "kesehatan"
+      },
+      {
+        "name": "FMIPA USK",
+        "position": [5.5690, 95.3683],
+        "address": "Jl. Syech Abdurrauf No.3, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Fakultas Kedokteran USK",
+        "position": [5.5652, 95.3710],
+        "address": "Jl. Teungku Tanoh Abee, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Fakultas Ekonomi dan Bisnis USK",
+        "position": [5.5732, 95.3667],
+        "address": "Jl. Teuku Nyak Arief, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Fakultas Pertanian USK",
+        "position": [5.5665, 95.3726],
+        "address": "Jl. Tgk. Hasan Krueng Kalee No.3, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Fakultas Teknik USK",
+        "position": [5.5671, 95.3681],
+        "address": "Jl. Syekh Abdurauf As Sinkili No.7, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
       }
+
   ]
