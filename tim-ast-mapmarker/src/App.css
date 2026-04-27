@@ -267,6 +267,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
 }
 
 .map-controls button {
@@ -352,24 +353,13 @@ h1 {
   border: 3px solid blue;
 }
 
-.filter-panel {
-  position: absolute;
-  top: 90px;
-  left: 20px;
-  background: white;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  z-index: 1000;
-}
-
-.filter-panel button {
-  margin: 3px;
-  padding: 5px 8px;
-  border: none;
+.filter-dropdown {
+  width: 100%;
+  padding: 6px;
   border-radius: 6px;
-  background-color: #2563eb;
-  color: white;
+  border: 1px solid #ddd;
+  font-size: 13px;
   cursor: pointer;
-  font-size: 12px;
+  background: #4f46e5;
+  color: white;
 }

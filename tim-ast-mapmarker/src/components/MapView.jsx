@@ -251,14 +251,37 @@ export default function MapView() {
       </MapContainer>
 
       {/* HAPUS SEMUA MARKER */}
-      <div className="filter-panel">
-        <h4>Filter Kategori</h4>
-        <button onClick={() => setActiveCategory("all")}>Semua</button>
-        <button onClick={() => setActiveCategory("wisata")}>Wisata</button>
-        <button onClick={() => setActiveCategory("belanja")}>Belanja</button>
-        <button onClick={() => setActiveCategory("edukasi")}>Edukasi</button>
-        <button onClick={() => setActiveCategory("kesehatan")}>Kesehatan</button>
-        <button onClick={() => setActiveCategory("pemerintahan")}>Pemerintahan</button>
+      <div className="map-controls">
+        <button onClick={() => setIsAddMode(!isAddMode)}>
+          {isAddMode ? "Matikan Mode Tambah Marker" : "Aktifkan Mode Tambah Marker"}
+        </button>
+
+        <button 
+          className="delete-all-btn"
+          onClick={() => setDynamicMarkers([])}
+        >
+          Hapus Semua Marker
+        </button>
+
+       <div className="filter-dropdown">
+          <select
+            className="filter-dropdown"
+            value={activeCategory}
+            onChange={(e) => setActiveCategory(e.target.value)}
+          >
+            <option value="all">Semua Kategori</option>
+            <option value="wisata">Wisata</option>
+            <option value="belanja">Belanja</option>
+            <option value="edukasi">Edukasi</option>
+            <option value="kesehatan">Kesehatan</option>
+            <option value="pemerintahan">Pemerintahan</option>
+            <option value="layanan">Layanan</option>
+            <option value="kuliner">Kuliner</option>
+            <option value="olahraga">Olahraga</option>
+            <option value="transportasi">Transportasi</option>
+          </select>
+
+        </div>
       </div>
 
       {/* LEGEND */}
