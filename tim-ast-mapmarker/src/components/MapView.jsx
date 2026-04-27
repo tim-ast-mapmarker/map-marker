@@ -23,6 +23,8 @@ const iconColors = {
 
 const iconCache = {};
 
+
+
   
 const getCustomIcon = (category) => {
   if (!iconCache[category]) {
@@ -48,6 +50,7 @@ export default function MapView() {
   const [isAddMode, setIsAddMode] = useState(false);
   const [editingMarkerId, setEditingMarkerId] = useState(null);
   const [dynamicMarkers, setDynamicMarkers] = useState([]);
+  const [showUSK, setShowUSK] = useState(true);
 
   /* DELETE MARKER */
   const handleDeleteMarker = useCallback((id) => {
@@ -104,6 +107,9 @@ export default function MapView() {
 
   return (
     <div style={{ height: "100vh", position: "relative" }}>
+      <div className="marker-counter">
+  Total Marker: {locations.length + dynamicMarkers.length}
+</div>
       <MapContainer
         center={[5.5705, 95.3687]}
         zoom={13}
@@ -117,15 +123,16 @@ export default function MapView() {
         <AddMarkerOnClick />
 
         {/* AREA USK */}
-        <Circle
-          center={[5.5690, 95.3695]}
-          radius={600}
-          pathOptions={{
-            color: "blue",
-            fillColor: "lightblue",
-            fillOpacity: 0.4,
-          }}
-        >
+        {showUSK && (
+  <Circle
+    center={[5.5690, 95.3695]}
+    radius={600}
+    pathOptions={{
+      color: "blue",
+      fillColor: "lightblue",
+      fillOpacity: 0.4,
+    }}
+  >
           <Popup>
             <div className="popup-card">
               <h3>Universitas Syiah Kuala</h3>
@@ -136,9 +143,10 @@ export default function MapView() {
               </p>
             </div>
           </Popup>
-        </Circle>
+        </Circle> 
+        )
 
-        {/* MULTIPLE MARKERS (DATA JSON) */}
+        /* MULTIPLE MARKERS (DATA JSON) */}
         {locations.map((loc) => (
           <Marker
             key={loc.name}
@@ -261,6 +269,9 @@ export default function MapView() {
         >
           Hapus Semua Marker
         </button>
+        <button onClick={() => setShowUSK(!showUSK)}>
+  Toggle Area USK
+</button>
       </div>
 
       {/* LEGEND */}
