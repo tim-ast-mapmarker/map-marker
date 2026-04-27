@@ -192,18 +192,16 @@ h1 {
   }
 }
 
-/* ============================= */
-/* Popup Styling - Day 2 Shania */
-/* ============================= */
-
 .leaflet-popup-content {
   margin: 0;
 }
 
 .leaflet-popup-content-wrapper {
   border-radius: 12px;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  min-width: 250px;
 }
 
 .leaflet-popup-tip {
@@ -213,6 +211,7 @@ h1 {
 .popup-card {
   text-align: center;
   font-family: Arial, sans-serif;
+  padding: 10px 8px;
 }
 
 .popup-card h3,
@@ -247,6 +246,7 @@ h1 {
   display: flex;
   align-items: center;
   margin-bottom: 6px;
+  gap: 6px;
 }
 
 .legend-item img {
@@ -255,29 +255,18 @@ h1 {
   margin-right: 8px;
 }
 
-.usk-circle {
-  width: 15px;
-  height: 15px;
-  background-color: lightblue;
-  border: 2px solid blue;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 8px;
-}
-
-/* ============================= */
-/* UI Control Panel - Day 4 */
-/* ============================= */
-
 .map-controls {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 70px;
   background: white;
-  padding: 10px 14px;
+  padding: 11px 14px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .map-controls button {
@@ -295,17 +284,70 @@ h1 {
   background-color: #3730a3;
 }
 
-.delete-btn {
-  margin-top: 6px;
-  padding: 5px 8px;
-  border: none;
-  background-color: #dc2626;
+.delete-btn:hover {
+  background-color: #991b1b;
+}
+
+.popup-card input, 
+.popup-card select {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+.popup-card input:focus,
+.popup-card select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  background-color: #fff;
+}
+
+.save-btn {
+  width: 90%;
+  background-color: green;
   color: white;
-  border-radius: 5px;
-  font-size: 12px;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
-.delete-btn:hover {
-  background-color: #991b1b;
+.edit-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 6px;
+  margin-right: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-all-btn {
+  background-color: #dc2626 !important;
+  color: white;
+}
+
+.delete-all-btn:hover {
+  background-color: #991b1b !important;
+}
+
+.legend-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: lightblue;
+  border: 3px solid blue;
 }
