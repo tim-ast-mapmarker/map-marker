@@ -48,6 +48,7 @@ export default function MapView() {
   const [isAddMode, setIsAddMode] = useState(false);
   const [editingMarkerId, setEditingMarkerId] = useState(null);
   const [dynamicMarkers, setDynamicMarkers] = useState([]);
+  const [activeCategory, setActiveCategory] = useState("all");
 
   /* DELETE MARKER */
   const handleDeleteMarker = useCallback((id) => {
@@ -139,7 +140,7 @@ export default function MapView() {
         </Circle>
 
         {/* MULTIPLE MARKERS (DATA JSON) */}
-        {locations.map((loc) => (
+        {locations.filter((loc) => activeCategory === "all"? true: loc.category === activeCategory).map((loc) => (
           <Marker
             key={loc.name}
             position={loc.position}
@@ -158,7 +159,7 @@ export default function MapView() {
         ))}
 
         {/* DYNAMIC MARKERS*/}
-        {dynamicMarkers.map((loc) => (
+        {dynamicMarkers.filter((loc) => activeCategory === "all"? true: loc.category === activeCategory).map((loc) => (
           <Marker
             key={loc.id}
             position={[loc.position[0], loc.position[1]]}
@@ -250,17 +251,14 @@ export default function MapView() {
       </MapContainer>
 
       {/* HAPUS SEMUA MARKER */}
-      <div className="map-controls">
-        <button onClick={() => setIsAddMode(!isAddMode)}>
-          {isAddMode ? "Matikan Mode Tambah Marker" : "Aktifkan Mode Tambah Marker"}
-        </button>
-
-        <button 
-          className="delete-all-btn"
-          onClick={() => setDynamicMarkers([])}
-        >
-          Hapus Semua Marker
-        </button>
+      <div className="filter-panel">
+        <h4>Filter Kategori</h4>
+        <button onClick={() => setActiveCategory("all")}>Semua</button>
+        <button onClick={() => setActiveCategory("wisata")}>Wisata</button>
+        <button onClick={() => setActiveCategory("belanja")}>Belanja</button>
+        <button onClick={() => setActiveCategory("edukasi")}>Edukasi</button>
+        <button onClick={() => setActiveCategory("kesehatan")}>Kesehatan</button>
+        <button onClick={() => setActiveCategory("pemerintahan")}>Pemerintahan</button>
       </div>
 
       {/* LEGEND */}
