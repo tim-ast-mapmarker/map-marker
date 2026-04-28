@@ -269,7 +269,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 180px;
+  width: 200px;
 }
 
 /* Base button */
@@ -288,7 +288,7 @@ h1 {
 
 /* Primary button */
 .map-controls button.primary {
-  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  background-color: #646cff;
   color: white;
 }
 
@@ -309,24 +309,13 @@ h1 {
 
 /* Secondary button */
 .map-controls button.secondary {
-  background: #eef2ff;
-  color: #3730a3;
+  background-color: #646cff;
+  color: white;
 }
 
 .map-controls button.secondary:hover {
-  background: #e0e7ff;
-}
-
-/* Dropdown */
-.filter-dropdown {
-  width: 100%;
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  font-size: 13px;
-  cursor: pointer;
-  background: #f9fafb;
-  color: #333;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.4);
 }
 
 .map-controls button:hover {
@@ -391,6 +380,7 @@ h1 {
 
 .delete-all-btn:hover {
   background-color: #991b1b !important;
+  transform: translateY(-1px);
 }
 
 .legend-circle {
@@ -402,14 +392,26 @@ h1 {
 }
 
 .filter-dropdown {
-  width: 100%;
-  padding: 6px;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  font-size: 13px;
-  cursor: pointer;
-  background: #4f46e5;
+  background-color: #3f46c7;
   color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  min-width: 150px;
+  transition: 0.2s ease;
+}
+
+.filter-dropdown:hover {
+  background-color: #535bf2;
+  transform: translateY(-1px);
+}
+
+.filter-dropdown:focus {
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.4);
 }
 
 .marker-counter {
@@ -422,4 +424,5 @@ h1 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   z-index: 1000;
   font-size: 13px;
+  color: #333;
 }
