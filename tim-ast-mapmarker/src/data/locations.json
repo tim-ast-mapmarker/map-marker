@@ -204,13 +204,13 @@
         "category": "olahraga"
       },
       {
-        "name": "Fakultas Syari'ah dan Hukum - UIN Ar-Raniry",
+        "name": " UIN Ar-Raniry - Fakultas Syari'ah dan Hukum",
         "position": [5.5769, 95.3693],
         "address": "Jl. Syeikh Abdurrauf, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
         "category": "edukasi"
       },
       {
-        "name": "UUIN Ar-Raniry - Fakultas Tarbiyah dan Keguruan",
+        "name": "UIN Ar-Raniry - Fakultas Tarbiyah dan Keguruan",
         "position": [5.5797, 95.3679],
         "address": "Jl. Syeikh Abdurrauf As Sinkili, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
         "category": "edukasi"
@@ -250,6 +250,139 @@
         "position": [5.5610, 95.3331],
         "address": "Jl. Moh. Daud Beureuh No.156, Beurawe, Kec. Kuta Alam, Kota Banda Aceh",
         "category": "kesehatan"
+      },
+      {
+        "name": "Stadion H. Dimurthala Lampineung",
+        "position": [5.56551, 95.34093],
+        "address": "Jl. Stadion H. Dimurthala, Kota Baru, Kec. Kuta Alam, Kota Banda Aceh, Aceh 24415",
+        "category": "olahraga"
+      },
+      {
+        "name": "Lapangan Blang Padang",
+        "position": [5.55021, 95.31368],
+        "address": "Kp. Baru, Kec. Baiturrahman, Kota Banda Aceh, Aceh 23116",
+        "category": "olahraga"
+      },
+      {
+        "name": "GOR Harapan Bangsa",
+        "position": [5.5248099049, 95.32368282215465],
+        "address": "Lhong Raya, Kec. Banda Raya, Kota Banda Aceh, Aceh 23231",
+        "category": "olahraga"
+      },
+      {
+        "name": "Taman Putroe Phang",
+        "position": [5.5470, 95.31750],
+        "address": "Jl. Merapi No.37, Sukaramai, Kec. Baiturrahman, Kota Banda Aceh, Aceh 23116",
+        "category": "wisata"
+      },
+      {
+        "name": "Museum PLTD Apung",
+        "position": [5.54659, 95.30685],
+        "address": "Jl. Harapan No.1, Punge Blang Cut, Kec. Jaya Baru, Kota Banda Aceh, Aceh 23116",
+        "category": "wisata"
+      },
+      {
+        "name": "Masjid Oman Al-Makmur",
+        "position": [5.56746, 95.33868],
+        "address": "Jl. Tgk. M Jl. Moh. Daud Beureuh, Bandar Baru, Kec. Kuta Alam, Kota Banda Aceh, Aceh",
+        "category": "wisata"
+      },
+      {
+        "name": "Kyriad Muraya Hotel",
+        "position": [5.5565, 95.32232],
+        "address": "Jalan Teugku H.Mohd Daud, Jl. Moh. Daud Beureuh No.5, Laksana, Kec. Kuta Alam, Kota Banda Aceh, Aceh 23122",
+        "category": "layanan"
+      },
+      {
+        "name": "Hermes Palace Hotel",
+        "position": [5.556132649474315, 95.34367790992088],
+        "address": "Jl. T. Panglima Nyak Makam, Lambhuk, Kec. Ulee Kareng, Kota Banda Aceh, Aceh 23117",
+        "category": "layanan"
+      },
+      {
+        "name": "Grand Nanggroe Hotel",
+        "position": [5.53742, 95.34108],
+        "address": "Jl. T. Imum, Cot Mesjid, Kec. Lueng Bata, Kota Banda Aceh, Aceh 23123",
+        "category": "layanan"
+      },
+      {
+        "name": "Masjid Baitul Musyahadah (Masjid DPR)",
+        "position": [5.53670, 95.30726],
+        "address": "Jl. Teuku Umar, Geuceu Kayee Jato, Kec. Banda Raya, Kota Banda Aceh, Aceh 23232",
+        "category": "layanan"
+      },
+      {
+        "name": "Pizza Hut Banda Aceh",
+        "position": [5.55669, 95.32209],
+        "address": "Jl. Teuku HM Jl. Moh. Daud Beureuh No.3, Laksana, Kec. Kuta Alam, Kota Banda Aceh, Aceh 23122",
+        "category": "kuliner"
+      },
+      {
+        "name": "Richeese Factory Banda Aceh",
+        "position": [5.55789, 95.32568],
+        "address": "Jl. Moh. Daud Beureuh No.183, Laksana, Kec. Kuta Alam, Kota Banda Aceh, Aceh 24415",
+        "category": "kuliner"
+      },
+      {
+        "name": "KFC Lamnyong Aceh",
+        "position": [5.57628, 95.35528],
+        "address": "Jl. Teuku Nyak Arief No.17, Lamgugob, Kec. Syiah Kuala, Kota Banda Aceh, Aceh 24415",
+        "category": "kuliner"
+      },
+      {
+        "name": "Solong Premium Coffee",
+        "position": [5.55361, 95.33438],
+        "address": "Beurawe, Kec. Ulee Kareng, Kota Banda Aceh, Aceh 23127",
+        "category": "kuliner"
+      },
+      {
+        "name": "Bank Aceh Syariah Kantor Pusat",
+        "position": [5.56455, 95.33552],
+        "address": "Jl. Tgk. H. Mohd. Daud Beureueh No 161 Lampriet, Bandar Baru, Kec. Kuta Alam, Kota Banda Aceh, Aceh 24415",
+        "category": "layanan"
+      },
+      {
+        "name": "Bank Syariah Indonesia",
+        "position": [5.55813, 95.32536],
+        "address": "H847+CRF, Jl. KH Ahmad Dahlan No.111, Merduati, Kec. Kuta Raja, Kota Banda Aceh, Aceh 23242",
+        "category": "layanan"
+      },
+      {
+        "name": "Bank BCA Banda Aceh",
+        "position": [5.55836, 95.32863],
+        "address": "Jl. Moh. Daud Beureuh No.44, Laksana, Kec. Kuta Alam, Kota Banda Aceh, Aceh 23121",
+        "category": "layanan"
+      },
+      {
+        "name": "SPBU Batoh",
+        "position": [5.53634, 95.33076],
+        "address": "Jl. Dr. Mr. Mohd Hasan, Batoh, Kec. Lueng Bata, Kota Banda Aceh, Aceh 23122",
+        "category": "layanan"
+      },
+      {
+        "name": "SPBU Pertamina Lamnyong",
+        "position": [5.57681, 95.35512],
+        "address": "Lamnyong, Jl. Teuku Nyak Arief, Lamgugob, Kec. Syiah Kuala, Kota Banda Aceh, Aceh 23112",
+        "category": "layanan"
+      },
+      {
+        "name": "SMAN 1 Banda Aceh",
+        "position": [5.55155, 95.31240],
+        "address": "Jl. Prof. A. Majid Ibrahim II No.1, Punge Jurong, Kec. Meuraxa, Kota Banda Aceh, Aceh 23231",
+        "category": "edukasi"
+      },
+      {
+        "name": "SMAN 3 Banda Aceh",
+        "position": [5.56134, 95.33168],
+        "address": "Jl. Tgk. Daud Beureuh No.454, Bandar Baru, Kec. Kuta Alam, Kota Banda Aceh, Aceh 24415",
+        "category": "edukasi"
+      },
+      {
+        "name": "SMKN 1 Banda Aceh",
+        "position": [5.52220, 95.32072],
+        "address": "G8CC+P83, Jl. Sultan Malikul Saleh, Lhong Raya, Kec. Banda Raya, Kota Banda Aceh, Aceh 23231",
+        "category": "edukasi"
       }
-
-  ]
+      
+]
+      
