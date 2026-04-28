@@ -31,7 +31,7 @@ const getCustomIcon = (category) => {
     iconCache[category] = new L.Icon({
       iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${iconColors[category]}.png`,
       shadowUrl:
-       "https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png",
+       `https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png`,
       iconSize: [25, 41],
       iconAnchor: [12, 41],
       popupAnchor: [1, -34],
@@ -50,6 +50,7 @@ export default function MapView() {
   const [isAddMode, setIsAddMode] = useState(false);
   const [editingMarkerId, setEditingMarkerId] = useState(null);
   const [dynamicMarkers, setDynamicMarkers] = useState([]);
+  const [activeCategory, setActiveCategory] = useState("all");
   const [showUSK, setShowUSK] = useState(true);
 
   /* DELETE MARKER */
@@ -124,30 +125,27 @@ export default function MapView() {
 
         {/* AREA USK */}
         {showUSK && (
-  <Circle
-    center={[5.5690, 95.3695]}
-    radius={600}
-    pathOptions={{
-      color: "blue",
-      fillColor: "lightblue",
-      fillOpacity: 0.4,
-    }}
-  >
-          <Popup>
-            <div className="popup-card">
-              <h3>Universitas Syiah Kuala</h3>
-              <p>Kawasan Kampus USK</p>
-              <p>
-                Jl. Teuku Nyak Arief No.441, Kopelma Darussalam,
-                Kec. Syiah Kuala, Kota Banda Aceh, Aceh 23111
-              </p>
-            </div>
-          </Popup>
-        </Circle> 
-        )
+          <Circle
+            center={[5.5690, 95.3695]}
+            radius={600}
+            pathOptions={{
+              color: "blue",
+              fillColor: "lightblue",
+              fillOpacity: 0.4,
+            }}
+          >
+            <Popup>
+              <div className="popup-card">
+                <h3>Universitas Syiah Kuala</h3>
+                <p>Kawasan Kampus USK</p>
+              </div>
+            </Popup>
+          </Circle>
+        )}
 
-        /* MULTIPLE MARKERS (DATA JSON) */}
-        {locations.map((loc) => (
+        {/* MULTIPLE MARKERS (DATA JSON) */}
+        {locations.filter((loc) => activeCategory === "all"? true: loc.category === activeCategory).map((loc) => (
+
           <Marker
             key={loc.name}
             position={loc.position}
@@ -166,7 +164,7 @@ export default function MapView() {
         ))}
 
         {/* DYNAMIC MARKERS*/}
-        {dynamicMarkers.map((loc) => (
+        {dynamicMarkers.filter((loc) => activeCategory === "all"? true: loc.category === activeCategory).map((loc) => (
           <Marker
             key={loc.id}
             position={[loc.position[0], loc.position[1]]}
@@ -269,9 +267,28 @@ export default function MapView() {
         >
           Hapus Semua Marker
         </button>
+
+       <div className="filter-dropdown">
+          <select
+            className="filter-dropdown"
+            value={activeCategory}
+            onChange={(e) => setActiveCategory(e.target.value)}
+          >
+            <option value="all">Semua Kategori</option>
+            <option value="wisata">Wisata</option>
+            <option value="belanja">Belanja</option>
+            <option value="edukasi">Edukasi</option>
+            <option value="kesehatan">Kesehatan</option>
+            <option value="pemerintahan">Pemerintahan</option>
+            <option value="layanan">Layanan</option>
+            <option value="kuliner">Kuliner</option>
+            <option value="olahraga">Olahraga</option>
+            <option value="transportasi">Transportasi</option>
+          </select>
+        </div>
         <button onClick={() => setShowUSK(!showUSK)}>
-  Toggle Area USK
-</button>
+          Toggle Area USK
+        </button>
       </div>
 
       {/* LEGEND */}
