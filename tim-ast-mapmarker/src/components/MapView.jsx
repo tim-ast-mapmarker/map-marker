@@ -257,7 +257,10 @@ export default function MapView() {
 
       {/* HAPUS SEMUA MARKER */}
       <div className="map-controls">
-        <button onClick={() => setIsAddMode(!isAddMode)}>
+        <button 
+          className="primary"
+          onClick={() => setIsAddMode(!isAddMode)}
+        >
           {isAddMode ? "Matikan Mode Tambah Marker" : "Aktifkan Mode Tambah Marker"}
         </button>
 
@@ -286,7 +289,10 @@ export default function MapView() {
             <option value="transportasi">Transportasi</option>
           </select>
         </div>
-        <button onClick={() => setShowUSK(!showUSK)}>
+        <button 
+          className="secondary" 
+          onClick={() => setShowUSK(!showUSK)}
+        >
           Toggle Area USK
         </button>
       </div>
