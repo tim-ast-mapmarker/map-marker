@@ -132,7 +132,6 @@ Project peta interaktif menggunakan React.js dan Leaflet.
   - Museum Aceh (Wisata)
 - Menambahkan simbol lingkaran area pada legend untuk USK agar konsisten dengan tampilan peta
 
----
 
 **Progress by: Shania Rizka Anindia**
 
@@ -141,7 +140,6 @@ Project peta interaktif menggunakan React.js dan Leaflet.
 - Menyempurnakan tata letak panel agar tidak menutupi peta
 - Styling konsisten dengan legend dan popup
 
----
 
 **Progress by: Thahira Riska**
 
@@ -153,6 +151,85 @@ Project peta interaktif menggunakan React.js dan Leaflet.
 
 ---
 
+## Day 5 – 27 April 2026
+**Tema: Filtering & UI Enhancement**
+
+**Progress by: Arifa Muthmainnah**
+
+- Membuat branch feature-arifa-day5
+- Menambahkan fitur filter kategori marker
+- Membuat dropdown "Filter Kategori"
+- Mengimplementasikan filtering menggunakan state activeCategory
+- Marker (static & dynamic) hanya tampil sesuai kategori yang dipilih
+- Menambahkan opsi "Semua Kategori"
+- Melakukan testing agar filter bekerja realtime tanpa reload
+- PR berhasil direview dan merge ke branch main
+
+**Progress by: Shania Rizka Anindia**
+
+- Membuat branch feature-shania-day5
+- Mendesain ulang tampilan panel kontrol (map-controls)
+- Menambahkan styling modern (blur, shadow, spacing, rounded corner)
+- Mengatur ulang posisi tombol agar tidak menutupi zoom control
+- Menyelaraskan warna tombol dengan tema aplikasi
+- Menambahkan marker counter (Total Marker)
+- PR berhasil direview dan merge ke branch main
+
+**Progress by: Thahira Riska**
+
+- Membuat branch feature-thahira-day5
+- Menambahkan fitur toggle Area USK (show/hide Circle)
+- Menggunakan state showUSK
+- Memastikan legend tetap sinkron dengan tampilan peta
+- Refactoring minor untuk meningkatkan readability kode
+- Melakukan review dan approval PR tim
+- Merge ke branch main
+
+---
+
+## Day 6 – 28 April 2026
+**Tema: Edit Marker & Improvement Stability**
+
+**Progress by: Arifa Muthmainnah**
+
+- Membuat branch feature-arifa-day6
+- Menambahkan fitur edit marker untuk dynamic marker
+- Mengganti sistem prompt menjadi form input di dalam popup
+    - Menambahkan input:
+    - Nama tempat
+    - Alamat
+    - Kategori (dropdown)
+- Menambahkan tombol "Save"
+- State langsung ter-update tanpa refresh
+PR berhasil direview dan merge ke branch main
+
+Progress by: Shania Rizka Anindia
+
+- Membuat branch feature-shania-day6
+- Menyempurnakan styling form dalam popup
+- Menambahkan focus state dan border highlight
+- Menyempurnakan hover effect tombol
+- Menyesuaikan warna dropdown agar konsisten dengan tema
+- Memastikan UI tetap responsif PR berhasil direview dan merge ke branch main
+
+Progress by: Thahira Riska
+
+- Membuat branch feature-thahira-day6
+- Memperbaiki bug delete marker agar re-render konsisten
+- Menambahkan mekanisme force re-render pada state update
+- Memastikan popup tertutup otomatis setelah marker dihapus
+- Cleanup kode yang tidak digunakan
+- Final testing seluruh fitur:
+- Add marker
+    - Edit marker
+    - Delete marker
+   - Delete all marker
+    - Filter kategori
+    - Toggle Area USK
+- Melakukan final review & approval PR
+- Merge ke branch main
+
+---
 
 ## Tech Stack
 - React.js
