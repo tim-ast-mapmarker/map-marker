@@ -23,13 +23,15 @@ const iconColors = {
 
 const iconCache = {};
 
+
+
   
 const getCustomIcon = (category) => {
   if (!iconCache[category]) {
     iconCache[category] = new L.Icon({
       iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${iconColors[category]}.png`,
       shadowUrl:
-       "https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png",
+       `https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png`,
       iconSize: [25, 41],
       iconAnchor: [12, 41],
       popupAnchor: [1, -34],
@@ -49,6 +51,7 @@ export default function MapView() {
   const [editingMarkerId, setEditingMarkerId] = useState(null);
   const [dynamicMarkers, setDynamicMarkers] = useState([]);
   const [activeCategory, setActiveCategory] = useState("all");
+  const [showUSK, setShowUSK] = useState(true);
 
   /* DELETE MARKER */
   const handleDeleteMarker = useCallback((id) => {
@@ -105,6 +108,9 @@ export default function MapView() {
 
   return (
     <div style={{ height: "100vh", position: "relative" }}>
+      <div className="marker-counter">
+  Total Marker: {locations.length + dynamicMarkers.length}
+</div>
       <MapContainer
         center={[5.5705, 95.3687]}
         zoom={13}
@@ -118,29 +124,28 @@ export default function MapView() {
         <AddMarkerOnClick />
 
         {/* AREA USK */}
-        <Circle
-          center={[5.5690, 95.3695]}
-          radius={600}
-          pathOptions={{
-            color: "blue",
-            fillColor: "lightblue",
-            fillOpacity: 0.4,
-          }}
-        >
-          <Popup>
-            <div className="popup-card">
-              <h3>Universitas Syiah Kuala</h3>
-              <p>Kawasan Kampus USK</p>
-              <p>
-                Jl. Teuku Nyak Arief No.441, Kopelma Darussalam,
-                Kec. Syiah Kuala, Kota Banda Aceh, Aceh 23111
-              </p>
-            </div>
-          </Popup>
-        </Circle>
+        {showUSK && (
+          <Circle
+            center={[5.5690, 95.3695]}
+            radius={600}
+            pathOptions={{
+              color: "blue",
+              fillColor: "lightblue",
+              fillOpacity: 0.4,
+            }}
+          >
+            <Popup>
+              <div className="popup-card">
+                <h3>Universitas Syiah Kuala</h3>
+                <p>Kawasan Kampus USK</p>
+              </div>
+            </Popup>
+          </Circle>
+        )}
 
         {/* MULTIPLE MARKERS (DATA JSON) */}
         {locations.filter((loc) => activeCategory === "all"? true: loc.category === activeCategory).map((loc) => (
+
           <Marker
             key={loc.name}
             position={loc.position}
@@ -280,8 +285,10 @@ export default function MapView() {
             <option value="olahraga">Olahraga</option>
             <option value="transportasi">Transportasi</option>
           </select>
-
         </div>
+        <button onClick={() => setShowUSK(!showUSK)}>
+          Toggle Area USK
+        </button>
       </div>
 
       {/* LEGEND */}
