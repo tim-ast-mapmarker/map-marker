@@ -91,7 +91,7 @@
       },
       {
         "name": "Fakultas Kedokteran USK",
-        "position": [5.5652, 95.3710],
+        "position": [5.5652, 95.3708],
         "address": "Jl. Teungku Tanoh Abee, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
         "category": "edukasi"
       },
@@ -112,6 +112,144 @@
         "position": [5.5671, 95.3681],
         "address": "Jl. Syekh Abdurauf As Sinkili No.7, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
         "category": "edukasi"
+      },
+      {
+        "name": "Fakultas Hukum USK",
+        "position": [5.5694, 95.3709],
+        "address": "Jl. Putroe Phang No.1, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Fakultas Ilmu Sosial dan Ilmu Politik USK",
+        "position": [5.5667, 95.3698],
+        "address": "Jl. Teungku Tanoh Abee, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Fakultas Keguruan dan Ilmu Pendidikan USK",
+        "position": [5.5683, 95.3713],
+        "address": "Jl. Tgk. Hasan Krueng Kalee, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Fakultas Kedokteran Gigi USK",
+        "position": [5.5650, 95.3700],
+        "address": "Jl. Teungku Tanoh Abee, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Fakultas Keperawatan USK",
+        "position": [5.5656, 95.3701],
+        "address": "Jl. Teungku Tanoh Abee, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Fakultas Kelautan dan Perikanan USK",
+        "position": [5.5690, 95.3695],
+        "address": "Jl. Tgk. Syech Abdul Rauf, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Fakultas Kedokteran Hewan USK",
+        "position": [5.5673, 95.3711],
+        "address": "Jl. Tgk. Hasan Krueng Kalee, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Fakultas Psikologi USK",
+        "position": [5.5646, 95.36964],
+        "address": "Jl. Teungku Tanoh Abee, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Gedung AAC Dayan Dawood",
+        "position": [5.5708, 95.3685],
+        "address": "Jl. Teuku Nyak Arief, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Lapangan Tugu Darussalam",
+        "position": [5.5727, 95.3699],
+        "address": "Jl. Teuku Nyak Arief, Lamgugob, Kec. Syiah Kuala, Kota Banda Aceh",
+        "category": "wisata"
+      },
+      {
+        "name": "Masjid Jamik Darussalam",
+        "position": [5.5708, 95.3715],
+        "address": "Jl. Teuku Nyak Arief, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "layanan"
+      },
+      {
+        "name": "Rumah Sakit Pendidikan USK",
+        "position": [5.5639, 95.3699],
+        "address": "Jl. Lkr. Kampus, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "kesehatan"
+      },
+      {
+        "name": "Perpustakaan USK",
+        "position": [5.5708, 95.3707],
+        "address": "Jl. Teuku Nyak Arief, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      }, 
+      {
+        "name": "Gedung Kantor Rektorat USK",
+        "position": [5.5705, 95.3699],
+        "address": "Jl. Teuku Nyak Arief, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Gelanggang Mahasiswa USK",
+        "position": [5.5711, 95.3662],
+        "address": "Jl. Syekh Abdul Rauf No.1, Kopelma Darussalam, Kec. Syiah Kuala, Kota Banda Aceh",
+        "category": "olahraga"
+      },
+      {
+        "name": "Fakultas Syari'ah dan Hukum - UIN Ar-Raniry",
+        "position": [5.5769, 95.3693],
+        "address": "Jl. Syeikh Abdurrauf, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "UUIN Ar-Raniry - Fakultas Tarbiyah dan Keguruan",
+        "position": [5.5797, 95.3679],
+        "address": "Jl. Syeikh Abdurrauf As Sinkili, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Universitas Muhammadiyah Aceh",
+        "position": [5.5354, 95.3322],
+        "address": "Jl. Muhammadiyah No.91, Batoh, Kec. Lueng Bata, Kota Banda Aceh, Aceh",
+        "category": "edukasi"
+      },
+      {
+        "name": "Lapangan Mini Soccer Lampineung",
+        "position": [5.5728, 95.3575],
+        "address": "Jl. Teungku Tanoh Abee, Kopelma Darussalam, Kec. Syiah Kuala, Banda Aceh",
+        "category": "olahraga"
+      },
+      {
+        "name": "Kolam Renang Tirta Raya",
+        "position": [5.5544, 95.3221],
+        "address": "Jl. H. Dimurthala Kuta Alam, Kuta Alam, Kec. Kuta Alam, Kota Banda Aceh",
+        "category": "olahraga"
+      }, 
+      {
+        "name": "Masjid Al-Furqan Beurawe",
+        "position": [5.5560, 95.3331],
+        "address": "Jln. K.saman No.20, Beurawe, Kec. Kuta Alam, Kota Banda Aceh",
+        "category": "layanan"
+      },
+      {
+        "name": "RSUD Meuraxa",
+        "position": [5.5176, 95.3178],
+        "address": "Jl. Soekarno - Hatta No.1, Mibo, Kec. Banda Raya, Kota Banda Aceh",
+        "category": "kesehatan"
+      },
+      {
+        "name": "Klinik Cempaka Lima Banda Aceh",
+        "position": [5.5610, 95.3331],
+        "address": "Jl. Moh. Daud Beureuh No.156, Beurawe, Kec. Kuta Alam, Kota Banda Aceh",
+        "category": "kesehatan"
       }
 
   ]
