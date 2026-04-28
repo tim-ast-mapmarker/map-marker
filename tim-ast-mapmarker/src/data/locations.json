@@ -114,7 +114,66 @@
         "category": "edukasi"
       },
 
-      
+      {
+        "name": "Stadion H. Dimurthala Lampineung",
+        "position": [5.56551, 95.34093],
+        "address": "Jl. Stadion H. Dimurthala, Kota Baru, Kec. Kuta Alam, Kota Banda Aceh, Aceh 24415",
+        "category": "olahraga"
+      },
+      {
+        "name": "Lapangan Blang Padang",
+        "position": [5.55021, 95.31368],
+        "address": "Kp. Baru, Kec. Baiturrahman, Kota Banda Aceh, Aceh 23116",
+        "category": "olahraga"
+      },
+      {
+        "name": "GOR Harapan Bangsa",
+        "position": [5.5248099049, 95.32368282215465],
+        "address": "Lhong Raya, Kec. Banda Raya, Kota Banda Aceh, Aceh 23231",
+        "category": "olahraga"
+      },
+      {
+        "name": "Taman Putroe Phang",
+        "position": [5.5470, 95.31750],
+        "address": "Jl. Merapi No.37, Sukaramai, Kec. Baiturrahman, Kota Banda Aceh, Aceh 23116",
+        "category": "wisata"
+      },
+      {
+        "name": "Museum PLTD Apung",
+        "position": [5.54659, 95.30685],
+        "address": "Jl. Harapan No.1, Punge Blang Cut, Kec. Jaya Baru, Kota Banda Aceh, Aceh 23116",
+        "category": "wisata"
+      },
+      {
+        "name": "Masjid Oman Al-Makmur",
+        "position": [5.56746, 95.33868],
+        "address": "Jl. Tgk. M Jl. Moh. Daud Beureuh, Bandar Baru, Kec. Kuta Alam, Kota Banda Aceh, Aceh",
+        "category": "wisata"
+      },
+      {
+        "name": "Kyriad Muraya Hotel",
+        "position": [5.5565, 95.32232],
+        "address": "Jalan Teugku H.Mohd Daud, Jl. Moh. Daud Beureuh No.5, Laksana, Kec. Kuta Alam, Kota Banda Aceh, Aceh 23122",
+        "category": "layanan"
+      },
+      {
+        "name": "Hermes Palace Hotel",
+        "position": [5.556132649474315, 95.34367790992088],
+        "address": "Jl. T. Panglima Nyak Makam, Lambhuk, Kec. Ulee Kareng, Kota Banda Aceh, Aceh 23117",
+        "category": "layanan"
+      },
+      {
+        "name": "Grand Nanggroe Hotel",
+        "position": [5.53742, 95.34108],
+        "address": "Jl. T. Imum, Cot Mesjid, Kec. Lueng Bata, Kota Banda Aceh, Aceh 23123",
+        "category": "layanan"
+      },
+      {
+        "name": "Masjid Baitul Musyahadah (Masjid DPR)",
+        "position": [5.53670, 95.30726],
+        "address": "Jl. Teuku Umar, Geuceu Kayee Jato, Kec. Banda Raya, Kota Banda Aceh, Aceh 23232",
+        "category": "layanan"
+      },
       {
         "name": "Pizza Hut Banda Aceh",
         "position": [5.55669, 95.32209],
